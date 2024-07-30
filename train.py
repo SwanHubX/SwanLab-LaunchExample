@@ -1,3 +1,7 @@
+################################
+# File Name: train.py
+################################
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -5,7 +9,7 @@ import swanlab
 import logging
 
 # 0. 初始化实验环境
-swanlab.init("Launch-Example", experiment_name="exp")  # 初始化swanlab
+swanlab.init("Launch-Example", experiment_name="test-remote")  # 初始化swanlab
 device = "cuda"
 if not torch.cuda.is_available():  # 判断是否存在显卡，不存在则报WARNING
     device = "cpu"

@@ -1,2 +1,2 @@
-swanlab==0.3.16
+swanlab==0.3.19a3
 torch==2.4.0

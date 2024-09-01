@@ -1,0 +1,8 @@
+apiVersion: swanlab/v1  # 接口版本，无需更改
+kind: Folder  # 加载任务类型，后续支持通过
+metadata:
+  name: Launch-Example  # 实验名称，仅仅
+  combo: RTX3090-1  # 使用的算力队列，可选RTX3090-1队列和H800-1队列
+spec:
+  python: "3.10"  # 暂时只支持3.8, 3.9, 3.10
+  entry: "train.py" # 要执行的入口函数
